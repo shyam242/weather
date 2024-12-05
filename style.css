@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:"poppins","sans-seriff";
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #6dd5fa, #2980b9);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.app-container {
+  text-align: center;
+  padding: 30px 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  width: 350px;
+}
+
+.search-box {
+  margin-bottom: 30px;
+}
+
+input {
+  padding: 12px 15px;
+  width: 70%;
+  border: 2px solid #2980b9;
+  border-radius: 30px;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #6dd5fa;
+  box-shadow: 0 0 10px #6dd5fa;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  background: linear-gradient(to right, #6dd5fa, #2980b9);
+  color: white;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+button:hover {
+  background: linear-gradient(to right, #1a5276, #6dd5fa);
+  box-shadow: 0 0 20px #6dd5fa, 0 0 40px #6dd5fa;
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(1.05);
+}
+
+.weather-info {
+  margin-top: 20px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.weather-info h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #6dd5fa;
+  text-shadow: 0 0 10px #6dd5fa;
+}
+
+.weather-info p {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
